@@ -116,8 +116,8 @@
 		D36D95621C96C20E00B7A3A1 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				D3084B971C983DF500ED3871 /* block */,
 				D35D64C21C97FAC000D7157B /* LGGCommonDef.h */,
+				D3084B971C983DF500ED3871 /* block */,
 				D35D64D41C983AD400D7157B /* category */,
 				D35D64C41C98110900D7157B /* util */,
 			);
