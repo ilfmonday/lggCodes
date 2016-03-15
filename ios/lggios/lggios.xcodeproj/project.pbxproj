@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D35D64C71C98115000D7157B /* LGGMailUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D35D64C61C98115000D7157B /* LGGMailUtil.m */; };
 		D36D954D1C96C0F000B7A3A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D36D954C1C96C0F000B7A3A1 /* main.m */; };
 		D36D95501C96C0F000B7A3A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D36D954F1C96C0F000B7A3A1 /* AppDelegate.m */; };
 		D36D95531C96C0F000B7A3A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D36D95521C96C0F000B7A3A1 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* Begin PBXFileReference section */
 		D35D64C21C97FAC000D7157B /* LGGCommonDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGGCommonDef.h; sourceTree = "<group>"; };
 		D35D64C31C97FBE000D7157B /* lggios.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lggios.pch; sourceTree = "<group>"; };
+		D35D64C51C98115000D7157B /* LGGMailUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGGMailUtil.h; sourceTree = "<group>"; };
+		D35D64C61C98115000D7157B /* LGGMailUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGGMailUtil.m; sourceTree = "<group>"; };
 		D36D95481C96C0F000B7A3A1 /* lggios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lggios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36D954C1C96C0F000B7A3A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D36D954E1C96C0F000B7A3A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,6 +40,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D35D64C41C98110900D7157B /* util */ = {
+			isa = PBXGroup;
+			children = (
+				D35D64C51C98115000D7157B /* LGGMailUtil.h */,
+				D35D64C61C98115000D7157B /* LGGMailUtil.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
 		D36D953F1C96C0F000B7A3A1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				D35D64C21C97FAC000D7157B /* LGGCommonDef.h */,
+				D35D64C41C98110900D7157B /* util */,
 			);
 			name = common;
 			path = ../../common;
@@ -157,6 +170,7 @@
 				D36D95531C96C0F000B7A3A1 /* ViewController.m in Sources */,
 				D36D95501C96C0F000B7A3A1 /* AppDelegate.m in Sources */,
 				D36D954D1C96C0F000B7A3A1 /* main.m in Sources */,
+				D35D64C71C98115000D7157B /* LGGMailUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
