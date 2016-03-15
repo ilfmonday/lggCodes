@@ -10,6 +10,7 @@
 #define LGGCommonDef_h
 
 #import <Foundation/Foundation.h>
+#import "NSObject+LGG.h"
 
 #pragma mark - #------------日志-------------#
 
