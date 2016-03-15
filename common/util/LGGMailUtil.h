@@ -13,4 +13,6 @@
 +(NSArray<NSString*>*)mailListForInputStr:(NSString*)str withStickupMails:(NSArray<NSString*>*)stickupArr;
 +(NSArray<NSString*>*)mailListForInputStr:(NSString*)str;
 
++(BOOL)isValidEmailWithString:(NSString*)str;
+
 @end

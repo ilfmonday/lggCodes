@@ -73,6 +73,11 @@ static NSArray* mailCandidates = nil;
     
 }
 
++(BOOL)isValidEmailWithString:(NSString*)str
+{
+    return [self p_isValidEmailStrict:YES withString:str];
+}
+
 
 #pragma mark - #------------私有-------------#
 
