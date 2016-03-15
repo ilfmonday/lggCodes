@@ -1,0 +1,19 @@
+//
+//  lggios.pch
+//  lggios
+//
+//  Created by lgg on 16/3/15.
+//  Copyright © 2016年 ty. All rights reserved.
+//
+
+#ifndef lggios_pch
+#define lggios_pch
+#ifdef __OBJC__
+
+
+#import "LGGCommonDef.h"
+
+
+
+#endif
+#endif /* lggios_pch */

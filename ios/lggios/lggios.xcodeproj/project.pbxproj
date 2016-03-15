@@ -14,6 +14,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D35D64C21C97FAC000D7157B /* LGGCommonDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGGCommonDef.h; sourceTree = "<group>"; };
+		D35D64C31C97FBE000D7157B /* lggios.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lggios.pch; sourceTree = "<group>"; };
 		D36D95481C96C0F000B7A3A1 /* lggios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lggios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36D954C1C96C0F000B7A3A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D36D954E1C96C0F000B7A3A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		D36D954B1C96C0F000B7A3A1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D35D64C31C97FBE000D7157B /* lggios.pch */,
 				D36D954C1C96C0F000B7A3A1 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -77,6 +80,7 @@
 		D36D95621C96C20E00B7A3A1 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				D35D64C21C97FAC000D7157B /* LGGCommonDef.h */,
 			);
 			name = common;
 			path = ../../common;
@@ -253,6 +257,7 @@
 		D36D95601C96C0F000B7A3A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREFIX_HEADER = lggios/lggios.pch;
 				INFOPLIST_FILE = lggios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -264,6 +269,7 @@
 		D36D95611C96C0F000B7A3A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREFIX_HEADER = lggios/lggios.pch;
 				INFOPLIST_FILE = lggios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
