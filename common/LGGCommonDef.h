@@ -36,6 +36,9 @@ if(block){ \
 block(__VA_ARGS__); \
 }
 
+#pragma mark - #------------weak-------------#
+#define WEAK_OBJ(weakName,obj) __weak typeof(obj) weakName = obj
+
 #pragma mark - #------------线程-------------#
 NS_INLINE void execOnMainThread(void(^block)(void))
 {

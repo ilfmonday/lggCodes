@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3084B9A1C983E0400ED3871 /* LGGBlockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D3084B991C983E0400ED3871 /* LGGBlockObject.m */; };
 		D35D64C71C98115000D7157B /* LGGMailUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D35D64C61C98115000D7157B /* LGGMailUtil.m */; };
 		D35D64D71C983AF500D7157B /* NSObject+LGG.m in Sources */ = {isa = PBXBuildFile; fileRef = D35D64D61C983AF500D7157B /* NSObject+LGG.m */; };
 		D36D954D1C96C0F000B7A3A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D36D954C1C96C0F000B7A3A1 /* main.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D3084B981C983E0400ED3871 /* LGGBlockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGGBlockObject.h; sourceTree = "<group>"; };
+		D3084B991C983E0400ED3871 /* LGGBlockObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGGBlockObject.m; sourceTree = "<group>"; };
 		D35D64C21C97FAC000D7157B /* LGGCommonDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGGCommonDef.h; sourceTree = "<group>"; };
 		D35D64C31C97FBE000D7157B /* lggios.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lggios.pch; sourceTree = "<group>"; };
 		D35D64C51C98115000D7157B /* LGGMailUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGGMailUtil.h; sourceTree = "<group>"; };
@@ -43,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3084B971C983DF500ED3871 /* block */ = {
+			isa = PBXGroup;
+			children = (
+				D3084B981C983E0400ED3871 /* LGGBlockObject.h */,
+				D3084B991C983E0400ED3871 /* LGGBlockObject.m */,
+			);
+			path = block;
+			sourceTree = "<group>";
+		};
 		D35D64C41C98110900D7157B /* util */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +116,7 @@
 		D36D95621C96C20E00B7A3A1 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				D3084B971C983DF500ED3871 /* block */,
 				D35D64C21C97FAC000D7157B /* LGGCommonDef.h */,
 				D35D64D41C983AD400D7157B /* category */,
 				D35D64C41C98110900D7157B /* util */,
@@ -181,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D36D95531C96C0F000B7A3A1 /* ViewController.m in Sources */,
+				D3084B9A1C983E0400ED3871 /* LGGBlockObject.m in Sources */,
 				D36D95501C96C0F000B7A3A1 /* AppDelegate.m in Sources */,
 				D35D64D71C983AF500D7157B /* NSObject+LGG.m in Sources */,
 				D36D954D1C96C0F000B7A3A1 /* main.m in Sources */,

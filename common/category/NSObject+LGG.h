@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#pragma mark - #------------- SafeCast --------------#
+
 #define CAST(clz,obj) ([clz safeCast:(obj) WarnOnFailure:YES MethodInfo:__PRETTY_FUNCTION__])
 #define AS(clz,obj) ([clz safeCast:(obj) WarnOnFailure:NO MethodInfo:nil])
-
-#pragma mark - #------------- SafeCast --------------#
 
 @interface NSObject (SafeCast)
 
