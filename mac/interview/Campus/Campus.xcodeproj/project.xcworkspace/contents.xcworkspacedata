@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Likai_SichuanDaxue.xcodeproj">
+      location = "self:Campus.xcodeproj">
    </FileRef>
 </Workspace>
