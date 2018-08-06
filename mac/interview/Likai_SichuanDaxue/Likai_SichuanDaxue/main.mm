@@ -8,9 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+struct ListNode {
+    int value;
+    ListNode* nextPtr;
+};
+
+void deleteCurrNode(ListNode* node)
+{
+    
+}
+
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-    }
     NSLog(@"Hello, World!");
     return 0;
 }
