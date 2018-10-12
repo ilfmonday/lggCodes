@@ -11,6 +11,21 @@
 
 #define DDLogWarn NSLog
 
+class Member{
+public:
+    ~Member(){NSLog(@"Member dealloc");}
+};
+
+class Container{
+public:
+    Container(Member mem):_member(mem){
+        
+    }
+    ~Container(){NSLog(@"Container dealloc");}
+private:
+    Member _member;
+};
+
 uint64_t firstDayTimeInWeek(uint64_t currSec);
 
 int main(int argc, const char * argv[]) {
@@ -21,6 +36,7 @@ int main(int argc, const char * argv[]) {
     DDLogWarn(@"host: %@",url.host);
     DDLogWarn(@"host: %@",url.path);
     
+    Container c((Member()));
     
     return 0;
 }
