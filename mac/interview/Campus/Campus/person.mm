@@ -23,7 +23,6 @@ namespace lgg {
     Person::Person(const Person& p)
     {
         auto str = *(p.nameptr_);
-        delete nameptr_;
         nameptr_ = new std::string();
         *nameptr_ = str;
         age_ = p.age_;
@@ -44,7 +43,7 @@ namespace lgg {
         nameptr_ = p.nameptr_;
         p.nameptr_ = nullptr;
         age_ = p.age_;
-        NSLog(@"person MOVE_CONSTRUCT, %s, %lld",nameptr_->c_str(),(int64_t)nameptr_);
+        NSLog(@"person MOVE_CONSTRUCT, %s, %lld",nameptr_ ? nameptr_->c_str() : "nullptr",(int64_t)nameptr_);
     }
     
     

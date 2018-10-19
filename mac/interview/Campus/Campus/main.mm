@@ -28,24 +28,32 @@ private:
 };
 
 uint64_t firstDayTimeInWeek(uint64_t currSec);
+void cppConstructMethodLearn();
 
 int main(int argc, const char * argv[]) {
     
+    cppConstructMethodLearn();
+    return 0;
+}
+
+void cppConstructMethodLearn()
+{
     lgg::Person p1;
     DDLogWarn(@"--------1--------");
     lgg::Person();
     DDLogWarn(@"--------2--------");
     auto p2 = p1;
     DDLogWarn(@"-------3--------");
-    auto p3 = lgg::Person();
+    auto&& p3  = lgg::Person();
     DDLogWarn(@"--------4--------");
     p3 = p1;
     DDLogWarn(@"---------5-------");
-    std::move(p1);
+    auto&& p4 = std::move(p1); //不会调用移动构造，只是定义引用
     DDLogWarn(@"--------6-------");
-    
-    
-    return 0;
+    auto p5 = std::move(p1); //调用移动构造
+    DDLogWarn(@"--------7-------");
+    auto p6 = static_cast<lgg::Person&&>(p1);
+    DDLogWarn(@"--------8-------");
 }
 
 uint64_t firstDayTimeInWeek(uint64_t currSec)
