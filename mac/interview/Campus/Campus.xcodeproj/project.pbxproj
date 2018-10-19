@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D35B8B50211848E600F61941 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = D35B8B4F211848E600F61941 /* main.mm */; };
 		D35B8B582118496B00F61941 /* Likai_SichuanDaxue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D35B8B562118496B00F61941 /* Likai_SichuanDaxue.cpp */; };
+		D3909BE92179C35300F28CE0 /* person.mm in Sources */ = {isa = PBXBuildFile; fileRef = D3909BE72179C35300F28CE0 /* person.mm */; };
 		D3BD63002137DF360089DBB8 /* UnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BD62FF2137DF360089DBB8 /* UnitTest.m */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,8 @@
 		D35B8B4F211848E600F61941 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		D35B8B562118496B00F61941 /* Likai_SichuanDaxue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Likai_SichuanDaxue.cpp; sourceTree = "<group>"; };
 		D35B8B572118496B00F61941 /* Likai_SichuanDaxue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Likai_SichuanDaxue.hpp; sourceTree = "<group>"; };
+		D3909BE72179C35300F28CE0 /* person.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = person.mm; sourceTree = "<group>"; };
+		D3909BE82179C35300F28CE0 /* person.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = person.hpp; sourceTree = "<group>"; };
 		D3BD62FE2137DF360089DBB8 /* UnitTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitTest.h; sourceTree = "<group>"; };
 		D3BD62FF2137DF360089DBB8 /* UnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTest.m; sourceTree = "<group>"; };
 		D3BD63012137E0180089DBB8 /* WXCCommonDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXCCommonDef.h; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 				D3BD62FE2137DF360089DBB8 /* UnitTest.h */,
 				D3BD62FF2137DF360089DBB8 /* UnitTest.m */,
 				D3BD63012137E0180089DBB8 /* WXCCommonDef.h */,
+				D3909BE72179C35300F28CE0 /* person.mm */,
+				D3909BE82179C35300F28CE0 /* person.hpp */,
 			);
 			path = Campus;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 			files = (
 				D3BD63002137DF360089DBB8 /* UnitTest.m in Sources */,
 				D35B8B582118496B00F61941 /* Likai_SichuanDaxue.cpp in Sources */,
+				D3909BE92179C35300F28CE0 /* person.mm in Sources */,
 				D35B8B50211848E600F61941 /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
