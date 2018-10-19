@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "UnitTest.h"
+#import "person.hpp"
 
 #define DDLogWarn NSLog
 
@@ -29,14 +30,20 @@ private:
 uint64_t firstDayTimeInWeek(uint64_t currSec);
 
 int main(int argc, const char * argv[]) {
-    NSLog(@"fir: %llu", firstDayTimeInWeek(1535299200));
-    NSLog(@"fir: %llu", firstDayTimeInWeek(1534694400));
     
-    NSURL* url = [NSURL URLWithString:@"https://work.weixin.qq.com/wework_admin/offline_check?_offid=100"];
-    DDLogWarn(@"host: %@",url.host);
-    DDLogWarn(@"host: %@",url.path);
+    lgg::Person p1;
+    DDLogWarn(@"--------1--------");
+    lgg::Person();
+    DDLogWarn(@"--------2--------");
+    auto p2 = p1;
+    DDLogWarn(@"-------3--------");
+    auto p3 = lgg::Person();
+    DDLogWarn(@"--------4--------");
+    p3 = p1;
+    DDLogWarn(@"---------5-------");
+    std::move(p1);
+    DDLogWarn(@"--------6-------");
     
-    Container c((Member()));
     
     return 0;
 }

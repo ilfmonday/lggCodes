@@ -15,10 +15,11 @@
 namespace lgg {
     class Person{
     public:
-        Person();
+        explicit Person();
         virtual ~Person();
         Person(const Person&);
         Person& operator=(const Person&);
+        Person(Person&& p) noexcept;
         std::string Name(){return *nameptr_;}
         uint64_t NameAddr(){return (uint64_t)nameptr_;};
     private:
