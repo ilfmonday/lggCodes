@@ -29,10 +29,21 @@ private:
 
 uint64_t firstDayTimeInWeek(uint64_t currSec);
 void cppConstructMethodLearn();
+void f(int);
+template <typename T>
+void f(T t) {
+    NSLog(@"call Template");
+}
+
+template <class T>
+void foo(T const& v){}
 
 int main(int argc, const char * argv[]) {
     
-    cppConstructMethodLearn();
+//    cppConstructMethodLearn();
+    foo(1);
+    enum {e1};
+    f(e1);
     return 0;
 }
 
@@ -54,6 +65,12 @@ void cppConstructMethodLearn()
     DDLogWarn(@"--------7-------");
     auto p6 = static_cast<lgg::Person&&>(p1);
     DDLogWarn(@"--------8-------");
+}
+
+
+void f(int a)
+{
+    NSLog(@"call Func");
 }
 
 uint64_t firstDayTimeInWeek(uint64_t currSec)
