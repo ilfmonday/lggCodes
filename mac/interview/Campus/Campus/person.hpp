@@ -16,7 +16,7 @@ namespace lgg {
     class Person{
     public:
         explicit Person();
-        virtual ~Person();
+        ~Person();
         Person(const Person&);
         Person& operator=(const Person&);
         Person(Person&& p) noexcept;
@@ -25,6 +25,9 @@ namespace lgg {
     private:
         std::string* nameptr_;
         int age_;
+    };
+    class Son : public Person{
+        ~Son();
     };
 }
 

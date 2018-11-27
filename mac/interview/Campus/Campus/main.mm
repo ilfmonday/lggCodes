@@ -9,6 +9,20 @@
 #import <Foundation/Foundation.h>
 #import "UnitTest.h"
 #import "person.hpp"
+#import "WXCEngineConfigMgr.h"
+
+@interface TestObj : NSObject
+-(void)test;
+@end
+@implementation TestObj
+
+-(void)test
+{
+    __weak __typeof(&*self)weakSelf = self;
+    NSLog(@"weakself is %@", weakSelf);
+}
+
+@end
 
 #define DDLogWarn NSLog
 
@@ -38,12 +52,22 @@ void f(T t) {
 template <class T>
 void foo(T const& v){}
 
+template <typename T>
+void test(T& v){
+    v = 2;
+    NSLog(@"v is %d", v);
+}
+
 int main(int argc, const char * argv[]) {
     
-//    cppConstructMethodLearn();
-    foo(1);
-    enum {e1};
-    f(e1);
+    int i = 1;
+    TestObj* obj = [[TestObj alloc]init];
+    [obj test];
+    
+    
+    int params[4] {0, 0, 0, 0};
+    DDLogWarn(@"size :%d, %d",sizeof(params), sizeof(Byte));
+    
     return 0;
 }
 
