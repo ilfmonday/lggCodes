@@ -10,6 +10,7 @@
 #import "UnitTest.h"
 #import "person.hpp"
 #import "WXCEngineConfigMgr.h"
+#include <functional>
 
 @interface TestObj : NSObject
 -(void)test;
@@ -58,11 +59,24 @@ void test(T& v){
     NSLog(@"v is %d", v);
 }
 
+class PP{
+public:
+    void operator()(int a){
+        NSLog(@"a is %d, age is %d",a,this->age);
+    }
+    int age;
+};
+
 int main(int argc, const char * argv[]) {
     
     int i = 1;
     TestObj* obj = [[TestObj alloc]init];
     [obj test];
+    
+    PP ppobj;
+    ppobj.age = 10;
+    std::function<void(int)> ppfun = ppobj;
+    ppfun(3);
     
     
     int params[4] {0, 0, 0, 0};
