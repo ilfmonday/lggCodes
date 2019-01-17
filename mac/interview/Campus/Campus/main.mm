@@ -10,6 +10,7 @@
 #import "UnitTest.h"
 #import "person.hpp"
 #import "WXCEngineConfigMgr.h"
+#import "Likai_SichuanDaxue.hpp"
 #include <functional>
 
 @interface TestObj : NSObject
@@ -69,18 +70,7 @@ public:
 
 int main(int argc, const char * argv[]) {
     
-    int i = 1;
-    TestObj* obj = [[TestObj alloc]init];
-    [obj test];
-    
-    PP ppobj;
-    ppobj.age = 10;
-    std::function<void(int)> ppfun = ppobj;
-    ppfun(3);
-    
-    
-    int params[4] {0, 0, 0, 0};
-    DDLogWarn(@"size :%d, %d",sizeof(params), sizeof(Byte));
+    cppl::PrintRecursive();
     
     return 0;
 }

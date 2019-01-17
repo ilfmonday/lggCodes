@@ -18,4 +18,8 @@ struct ListNode {
 
 void deleteCurrNode(ListNode* node);
 
+namespace cppl {
+    void PrintRecursive();
+}
+
 #endif /* Likai_SichuanDaxue_hpp */
